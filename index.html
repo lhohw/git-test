@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=viewport-width, initial-scale=1">
     <meta name="description" content="Git test">
     <style>
-      /* Common */
+      /* General Styling */
       *,
       *::before,
       *::after {
@@ -20,6 +20,7 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      /* Common */
       li {
         list-style: none;
       }
@@ -28,7 +29,7 @@
       }
       /* Header */
       header {
-        padding: 0 2rem;
+        padding: 0 4rem;
         background-color: #abbbfa;
         height: 7rem;
         width: 100%;
@@ -43,9 +44,21 @@
       header ul {
         display: flex;
       }
+      header li {
+        font-size: .8rem;
+        font-weight: 700;
+      }
+      ul li + li {
+        margin-left: 2rem;
+      }
       /* Video */
       video {
         width: 100vw;
+      }
+      @media (max-width: 600px) {
+        header ul {
+          display: none;
+        }
       }
     </style>
   </head>
