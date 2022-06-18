@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   --main-color: rgb(66, 91, 255);
-  --header-bg: rgb(236, 238, 251);
+  --header-bg: rgb(246, 246, 252);
   --font-color: #3f3f3f;
 }
 @media (prefers-color-scheme:dark) {
@@ -56,9 +56,19 @@ header {
   top: 0;
   z-index: 10;
 }
+header a {
+  display: inline-block;
+  vertical-align: middle;
+}
+header > a {
+  font-size: 3rem;
+}
 header img {
-  width: 12.5rem;
+  width: 7.5rem;
   height: 100%;
+  clip-path: circle(30% at 50% 50%);
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+  vertical-align: middle;
 }
 header ul {
   display: flex;
