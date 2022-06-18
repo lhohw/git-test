@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+  --main-color: rgb(66, 91, 255);
   --header-bg: rgb(236, 238, 251);
   --font-color: #3f3f3f;
 }
@@ -30,6 +31,12 @@ li {
 }
 a {
   text-decoration: none;
+}
+a:-webkit-any-link {
+  color: var(--font-color);
+}
+a:hover {
+  color: var(--main-color);
 }
 section {
   width: 100vw;
