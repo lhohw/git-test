@@ -3,81 +3,9 @@
   <head>
     <title>Git Test</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=viewport-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Git test">
-    <style>
-      /* General Styling */
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-          sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      /* Common */
-      li {
-        list-style: none;
-      }
-      a {
-        text-decoration: none;
-      }
-      section {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-      }
-      /* Header */
-      header {
-        padding: 0 4rem;
-        background-color: #abbbfa;
-        height: 7rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      header img {
-        width: 12.5rem;
-        height: 100%;
-      }
-      header ul {
-        display: flex;
-      }
-      header li {
-        font-size: .8rem;
-        font-weight: 700;
-      }
-      ul li + li {
-        margin-left: 2rem;
-      }
-      /* Video */
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center top;
-        opacity: .7;
-      }
-      .bg-pattern--0 {
-        position: absolute;
-        z-index: 1;
-        background-size: auto auto;
-        background-image: repeating-linear-gradient(0deg, transparent 0, transparent 2px, #00000050 2px, #00000050 4px);
-        width: 100%;
-        height: 100%;
-      }
-      @media (max-width: 600px) {
-        header ul {
-          display: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Header -->
@@ -86,10 +14,10 @@
         <img src="assets/castle.jpg" alt="Logo Image">
       </a>
       <ul>
-        <li>ABOUT</li>
-        <li>HOW TO USE</li>
-        <li>SERVICE</li>
-        <li>CONTACT</li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">HOW TO USE</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">CONTACT</a></li>
       </ul>
     </header>
     <!-- Video -->
